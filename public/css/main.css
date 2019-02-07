@@ -18,6 +18,10 @@ body {
   }
 }
 
+button:focus {
+  outline: none;
+}
+
 .animate-add.active {
   padding: 0;
 }
@@ -40,6 +44,14 @@ body {
 
 .trans-slow {
   transition-duration: 1s;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 576px) {
