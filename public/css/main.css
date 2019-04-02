@@ -297,115 +297,15 @@ button.scroll_down:before {
   background: #ef9075;
 }
 
-nav .slide-toggle {
-  position: absolute;
-  top: 60px;
-  right: 70px;
-  transition: all 0.5s ease;
-  font-size: 12px;
-  line-height: 26px;
-}
-
-nav .slide-toggle:focus {
-  outline: 0;
-}
-
-nav .slide-toggle.active {
-  right: 340px;
-  transition: all 0.5s ease;
-}
-
-nav.open .nav-overlay {
-  background: rgba(0, 0, 0, 0.62);
-  transition: all 1s ease;
-  animation-delay: 3s;
+#nav-sm.active {
+  background: rgba(34, 41, 47, 0.8);
   position: fixed;
-  width: 100%;
-  height: 100vh;
-  right: 0;
-  z-index: 0;
-}
-
-nav .menu {
-  float: right;
-  overflow: hidden;
-  display: none;
-  z-index: 1;
-  position: relative;
-}
-
-nav .menu-inner {
-  width: 300px;
-}
-
-nav.animate-add.active {
-  position: fixed;
-  right: 0;
-  z-index: 10;
-}
-
-.menu-wrapper {
-  margin: auto;
-  width: 39px;
-  height: 25px;
-  cursor: pointer;
-}
-
-.hamburger-menu,
-.hamburger-menu:after,
-.hamburger-menu:before {
-  width: 39px;
-  height: 3px;
-}
-
-.hamburger-menu {
-  transform: translateY(11px);
-  background: white;
-  transition: all 0.1s;
-}
-
-.hamburger-menu.animate {
-  background: rgba(255, 255, 255, 0);
-}
-
-.hamburger-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 11px;
-  background: white;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 11px;
-  background: white;
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu.animate:after {
   top: 0;
-  transform: rotate(45deg);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  left: 0;
+  padding: 10px;
+  z-index: 18;
 }
 
-.hamburger-menu.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.dark .slide-toggle {
-  color: black;
-}
-
-.dark .hamburger-menu, .dark .hamburger-menu:before, .dark .hamburger-menu:after {
-  background-color: black;
-}
-
-.dark .hamburger-menu.animate {
-  background: rgba(255, 255, 255, 0);
+#nav-sm.active a {
+  color: white;
 }

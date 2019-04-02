@@ -5,16 +5,16 @@
     var controller = new ScrollMagic.Controller();
 
     // loop through each .timeline element
-  $('.nav-dark').each(function(){
+  $('.nav-stick').each(function(){
 
     // build a scene
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this.children[0],
       triggerHook: 0.1,
       reverse: true,
-      duration: '90%'
+      duration: '1400%'
     })
-    .setClassToggle('#nav', 'dark') 
+    .setClassToggle('#nav-sm', 'active') 
     // .addIndicators({
     //   name: 'scene',
     //   colorTrigger: 'yellow',
